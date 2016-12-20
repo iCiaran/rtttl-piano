@@ -25,7 +25,7 @@ def make(notes):
 
     file = "{}{}".format(re.sub("\W", '_', rtttl[0]), ".json")
     with open(file, 'w') as f:
-        f.write(json_data)
+        f.write("{}\n".format(json_data))
 
 
 def getSong(notes, rtttl):
